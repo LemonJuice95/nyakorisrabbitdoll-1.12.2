@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DWD",
+    "WBW"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:dye",
+      "data": 15
+    },
+    "W": {
+      "item": "minecraft:wool",
+      "data": 0
+    },
+    "B": {
+      "item": "minecraft:dye",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "nyakorisrabbitdoll:high_hat",
+    "count": 1
+  }
+}

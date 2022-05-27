@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " E ",
+    "EBE",
+    " E "
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:experience_bottle",
+      "data": 0
+    },
+    "B": {
+      "item": "nyakorisrabbitdoll:bowknot",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "nyakorisrabbitdoll:magical_bowknot",
+    "count": 1
+  }
+}

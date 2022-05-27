@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl",
+      "data": 0
+    },
+    {
+      "item": "nyakorisrabbitdoll:cabbage",
+      "data": 0
+    },
+    {
+      "item": "nyakorisrabbitdoll:cabbage",
+      "data": 0
+    },
+    {
+      "item": "nyakorisrabbitdoll:cabbage",
+      "data": 0
+    }
+  ],
+  "result": {
+    "item": "nyakorisrabbitdoll:shredded_cabbage",
+    "count": 1
+  }
+}

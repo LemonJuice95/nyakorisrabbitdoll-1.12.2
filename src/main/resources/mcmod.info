@@ -1,0 +1,16 @@
+[
+{
+  "modid": "nyakorisrabbitdoll",
+  "name": "Nyakori's Rabbit Doll",
+  "description": "",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["LEMONJUICE"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

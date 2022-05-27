@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:dye",
+      "data": 0
+    },
+    {
+      "item": "minecraft:feather"
+    },
+    {
+      "item": "minecraft:paper"
+    }
+  ],
+  "result": {
+    "item": "nyakorisrabbitdoll:entrustment",
+    "count": 1
+  }
+}

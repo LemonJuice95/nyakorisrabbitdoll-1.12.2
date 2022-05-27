@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " E ",
+    "EHE",
+    " E "
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:experience_bottle"
+    },
+    "H": {
+      "item": "nyakorisrabbitdoll:high_hat"
+    }
+  },
+  "result": {
+    "item": "nyakorisrabbitdoll:magical_high_hat",
+    "count": 1
+  }
+}

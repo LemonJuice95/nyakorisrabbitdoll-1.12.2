@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "age=0": {"model": "nyakorisrabbitdoll:cabbage_0"},
+    "age=1": {"model": "nyakorisrabbitdoll:cabbage_1"},
+    "age=2": {"model": "nyakorisrabbitdoll:cabbage_2"},
+    "age=3": {"model": "nyakorisrabbitdoll:cabbage_3"}
+  }
+}
