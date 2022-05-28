@@ -17,6 +17,7 @@ public class PedestalBlockItem extends ItemBlock implements IHasModel {
         this.pedestal = block;
         this.setHasSubtypes(true);
         this.setRegistryName("pedestal");
+        this.setUnlocalizedName("pedestal");
         NItemRegister.ITEMS.add(this);
     }
 
