@@ -54,7 +54,7 @@ public class PedestalBlock extends Block  implements IHasModel {
 
     public PedestalBlock() {
         super(Material.ROCK);
-        this.setCreativeTab(NItemTab.NYAKORIS_RABBIT_DOLL);
+//        this.setCreativeTab(NItemTab.NYAKORIS_RABBIT_DOLL);
         this.setDefaultState(this.blockState.getBaseState()
                 .withProperty(POWERED, false)
                 .withProperty(STATE, 0)
