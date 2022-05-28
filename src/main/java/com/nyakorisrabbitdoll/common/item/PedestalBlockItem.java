@@ -11,10 +11,11 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 
 public class PedestalBlockItem extends ItemBlock implements IHasModel {
-    private final PedestalBlock pedestal = new PedestalBlock();
+    private final PedestalBlock pedestal;
 
-    public PedestalBlockItem() {
-        super(new PedestalBlock());
+    public PedestalBlockItem(PedestalBlock block) {
+        super(block);
+        this.pedestal = block;
         this.setHasSubtypes(true);
         this.setRegistryName("pedestal");
         this.setUnlocalizedName("pedestal");

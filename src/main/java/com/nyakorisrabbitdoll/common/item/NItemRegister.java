@@ -1,5 +1,6 @@
 package com.nyakorisrabbitdoll.common.item;
 
+import com.nyakorisrabbitdoll.common.block.NBlockRegister;
 import com.nyakorisrabbitdoll.common.block.PedestalBlock;
 import com.nyakorisrabbitdoll.common.item.spawners.*;
 import net.minecraft.item.Item;
@@ -10,7 +11,7 @@ import java.util.List;
 public class NItemRegister {
     public static final List<Item> ITEMS = new ArrayList<Item>();
 
-    public static final Item PEDESTAL = new PedestalBlockItem();
+    public static final Item PEDESTAL = new PedestalBlockItem((PedestalBlock) NBlockRegister.JADE_PLATE_PEDESTAL);
     public static final Item CABBAGE = new ItemCabbage().setUnlocalizedName("cabbage").setRegistryName("cabbage").setCreativeTab(NItemTab.NYAKORIS_RABBIT_DOLL);
     public static final Item SHREDDED_CABBAGE = new ItemShreddedCabbage(6,3.0F).setUnlocalizedName("shredded_cabbage").setRegistryName("shredded_cabbage");
     public static final Item RABBIT_DOLL = new NItemBase("rabbit_doll");
