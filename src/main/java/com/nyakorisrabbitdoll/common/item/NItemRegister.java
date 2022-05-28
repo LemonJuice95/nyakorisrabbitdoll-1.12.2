@@ -10,7 +10,7 @@ import java.util.List;
 public class NItemRegister {
     public static final List<Item> ITEMS = new ArrayList<Item>();
 
-    public static final Item PEDESTAL = new PedestalBlockItem(new PedestalBlock());
+    public static final Item PEDESTAL = new PedestalBlockItem();
     public static final Item CABBAGE = new ItemCabbage().setUnlocalizedName("cabbage").setRegistryName("cabbage").setCreativeTab(NItemTab.NYAKORIS_RABBIT_DOLL);
     public static final Item SHREDDED_CABBAGE = new ItemShreddedCabbage(6,3.0F).setUnlocalizedName("shredded_cabbage").setRegistryName("shredded_cabbage");
     public static final Item RABBIT_DOLL = new NItemBase("rabbit_doll");

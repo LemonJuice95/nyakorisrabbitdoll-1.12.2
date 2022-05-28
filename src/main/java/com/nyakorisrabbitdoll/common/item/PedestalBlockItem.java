@@ -4,17 +4,17 @@ import com.nyakorisrabbitdoll.common.block.JadePlateBlock;
 import com.nyakorisrabbitdoll.common.block.PedestalBlock;
 import com.nyakorisrabbitdoll.nyakorisrabbitdoll;
 import com.nyakorisrabbitdoll.util.IHasModel;
+import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 
 public class PedestalBlockItem extends ItemBlock implements IHasModel {
-    private final PedestalBlock pedestal;
+    private final PedestalBlock pedestal = new PedestalBlock();
 
-    public PedestalBlockItem(PedestalBlock block) {
-        super(block);
-        this.pedestal = block;
+    public PedestalBlockItem() {
+        super(new PedestalBlock());
         this.setHasSubtypes(true);
         this.setRegistryName("pedestal");
         this.setUnlocalizedName("pedestal");
