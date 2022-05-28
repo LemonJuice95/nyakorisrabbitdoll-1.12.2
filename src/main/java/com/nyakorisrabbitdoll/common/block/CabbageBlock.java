@@ -33,7 +33,7 @@ public class CabbageBlock extends BlockCrops {
         this.setRegistryName("cabbage");
         this.setCreativeTab(NItemTab.NYAKORIS_RABBIT_DOLL);
         NBlockRegister.BLOCKS.add(this);
-        NItemRegister.ITEMS.add(new ItemBlock(this).setRegistryName("cabbage_seed").setUnlocalizedName("cabbage_seed"));
+//        NItemRegister.ITEMS.add(new ItemBlock(this).setRegistryName("cabbage_seed").setUnlocalizedName("cabbage_seed"));
     }
 
     @Override

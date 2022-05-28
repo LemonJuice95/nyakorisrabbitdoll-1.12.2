@@ -18,9 +18,12 @@ import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.properties.PropertyInteger;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
+import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -54,7 +57,7 @@ public class PedestalBlock extends Block  implements IHasModel {
 
     public PedestalBlock() {
         super(Material.ROCK);
-//        this.setCreativeTab(NItemTab.NYAKORIS_RABBIT_DOLL);
+        this.setCreativeTab(NItemTab.NYAKORIS_RABBIT_DOLL);
         this.setDefaultState(this.blockState.getBaseState()
                 .withProperty(POWERED, false)
                 .withProperty(STATE, 0)
@@ -71,6 +74,12 @@ public class PedestalBlock extends Block  implements IHasModel {
 
     public JadePlateBlock.JadePlateType getJadePlateType(int meta) {
         return JadePlateBlock.JadePlateType.byMetadata((meta & 1) % 2);
+    }
+
+    @Override
+    public void getSubBlocks(CreativeTabs creativeTab, NonNullList<ItemStack> list) {
+        list.add(new ItemStack(this, 1, 0));
+        list.add(new ItemStack(this, 1, 1));
     }
 
     @Override
@@ -96,7 +105,7 @@ public class PedestalBlock extends Block  implements IHasModel {
 
     @Override
     protected BlockStateContainer createBlockState() {
-        return new BlockStateContainer(this, new IProperty[] {VARIANT, STATE, POWERED});
+        return new BlockStateContainer(this, POWERED, VARIANT, STATE);
     }
 
     private static java.util.List<AxisAlignedBB> getCollisionBoxList(IBlockState bstate) {
@@ -132,8 +141,8 @@ public class PedestalBlock extends Block  implements IHasModel {
     public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos) {
         IBlockState up = worldIn.getBlockState(pos.up());
         IBlockState down = worldIn.getBlockState(pos.down());
-        if(up.getBlock() == this && this.getMetaFromState(up) == this.getMetaFromState(state)) {
-            if(down.getBlock() == this && this.getMetaFromState(down) == this.getMetaFromState(state)) {
+        if(up.getBlock() == this && up.getValue(VARIANT) == state.getValue(VARIANT)) {
+            if(down.getBlock() == this && down.getValue(VARIANT) == state.getValue(VARIANT)) {
                 IBlockState state1 = state;
                 while(state1.getValue(STATE) != 3) {
                     state1 = state1.cycleProperty(STATE);
@@ -147,7 +156,7 @@ public class PedestalBlock extends Block  implements IHasModel {
                 worldIn.setBlockState(pos, state1);
             }
         } else {
-            if(down.getBlock() == this && this.getMetaFromState(down) == this.getMetaFromState(state)) {
+            if(down.getBlock() == this && down.getValue(VARIANT) == state.getValue(VARIANT)) {
                 IBlockState state1 = state;
                 while(state1.getValue(STATE) != 2) {
                     state1 = state1.cycleProperty(STATE);
@@ -155,7 +164,7 @@ public class PedestalBlock extends Block  implements IHasModel {
                 worldIn.setBlockState(pos, state1);
             } else {
                 IBlockState state1 = state;
-                while(state1.getValue(STATE) != 1) {
+                while(state1.getValue(STATE) != 0) {
                     state1 = state1.cycleProperty(STATE);
                 }
                 worldIn.setBlockState(pos, state1);

@@ -1,8 +1,20 @@
 {
   "variants": {
-    "state=0": {"model": "nyakorisrabbitdoll:pedestal_0"},
-    "state=1": {"model": "nyakorisrabbitdoll:pedestal_1"},
-    "state=2": {"model": "nyakorisrabbitdoll:pedestal_2"},
-    "state=3": {"model": "nyakorisrabbitdoll:pedestal_3"}
+    "powered=false,state=0,variant=pale": {"model": "nyakorisrabbitdoll:pedestal_0"},
+    "powered=false,state=1,variant=pale": {"model": "nyakorisrabbitdoll:pedestal_1"},
+    "powered=false,state=2,variant=pale": {"model": "nyakorisrabbitdoll:pedestal_2"},
+    "powered=false,state=3,variant=pale": {"model": "nyakorisrabbitdoll:pedestal_3"},
+    "powered=true,state=0,variant=pale": {"model": "nyakorisrabbitdoll:pedestal_0"},
+    "powered=true,state=1,variant=pale": {"model": "nyakorisrabbitdoll:pedestal_1"},
+    "powered=true,state=2,variant=pale": {"model": "nyakorisrabbitdoll:pedestal_2"},
+    "powered=true,state=3,variant=pale": {"model": "nyakorisrabbitdoll:pedestal_3"},
+    "powered=true,state=0,variant=ocean": {"model": "nyakorisrabbitdoll:pedestal_0"},
+    "powered=true,state=1,variant=ocean": {"model": "nyakorisrabbitdoll:pedestal_1"},
+    "powered=true,state=2,variant=ocean": {"model": "nyakorisrabbitdoll:pedestal_2"},
+    "powered=true,state=3,variant=ocean": {"model": "nyakorisrabbitdoll:pedestal_3"},
+    "powered=false,state=0,variant=ocean": {"model": "nyakorisrabbitdoll:pedestal_0"},
+    "powered=false,state=1,variant=ocean": {"model": "nyakorisrabbitdoll:pedestal_1"},
+    "powered=false,state=2,variant=ocean": {"model": "nyakorisrabbitdoll:pedestal_2"},
+    "powered=false,state=3,variant=ocean": {"model": "nyakorisrabbitdoll:pedestal_3"}
   }
 }
